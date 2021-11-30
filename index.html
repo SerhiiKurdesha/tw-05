@@ -5,15 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тест</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="page-header">
         <div class="container">
-            <h1>Hello</h1>
+            <div class="page-header__content">
+                <button class="menu-toggle js-open-menu" aria-expanded="true" aria-controls="mobile-menu">
+                    <svg width="32" height="32">
+                        <use href="./svg/sprite.svg#icon-menu">
+                    </svg>
+                </button>
+                <ul class="page-header__list">
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">О нас</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">Работы</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">Контакты</a>
+                    </li>
+                    <li class="page-header__item">
+                        <a href="#" class="page-header__link">Карьера</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <!-- ====================== -->
+
+    <main>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex culpa, ullam inventore beatae eius? Itaque harum, sed, tempora quis provident aspernatur dolor sequi nemo nostrum, impedit laborum! Eius, aperiam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto a dignissimos commodi voluptates fugit iusto soluta totam laudantium explicabo, ea illo perferendis sapiente, nisi doloremque facere accusamus, expedita beatae sunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam optio minus facilis error delectus magni repellendus dolore labore maxime pariatur doloribus quibusdam, eum nihil modi debitis rerum odio quidem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quo minima velit cum eos eius iusto voluptatem illum porro incidunt quidem sequi ipsa, adipisci voluptates autem? Suscipit unde temporibus sapiente?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolores! Distinctio voluptas soluta, vero dicta assumenda quia nisi porro suscipit, repudiandae ducimus quas! Officia, quod quasi odit in vel optio.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ipsa, voluptatem id, expedita dolore quasi, enim provident tenetur nam saepe tempora. Voluptatibus, voluptates exercitationem quibusdam provident facere quam doloribus in?</p>
+        </div>
+    </main>
+
+    <!-- ======================== -->
+
+    <div class="menu-container js-menu-container">
+        <button class="menu-toggle js-close-menu" id="mobile-menu">
+            <svg width="32" height="32">
+                <use href="./svg/sprite.svg#icon-cross">
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">О нас</li>
+            <li class="mobile-menu__item">Работы</li>
+            <li class="mobile-menu__item">Контакты</li>
+            <li class="mobile-menu__item">Карьера</li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>    
     
 </body>
 </html>
